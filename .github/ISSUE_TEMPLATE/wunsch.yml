@@ -1,0 +1,17 @@
+name: Wunsch äußern
+description: Ein Thema, Handgriff, Plugin, Genre oder Clip, das auf ProducerDocs fehlt.
+title: 'Wunsch: '
+labels: [wunsch]
+body:
+  - type: input
+    id: seite
+    attributes:
+      label: Seite
+      description: Optional, falls dein Wunsch zu einer bestimmten Seite gehört.
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Was wünschst du dir?
+      description: Was möchtest du lernen, und wo bist du gerade hängen geblieben?
+    validations:
+      required: true

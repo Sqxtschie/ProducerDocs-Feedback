@@ -1,0 +1,24 @@
+name: Fehler melden
+description: Etwas auf ProducerDocs stimmt nicht (falscher Schritt, Kürzel, Link, Darstellung).
+title: 'Fehler: '
+labels: [fehler]
+body:
+  - type: input
+    id: seite
+    attributes:
+      label: Seite
+      description: Auf welcher Seite ist der Fehler? Titel oder Pfad reicht.
+      placeholder: Panorama · /docs/grundlagen/mixer/panorama
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Was stimmt nicht?
+      description: Beschreib kurz, was falsch ist und wie es richtig wäre.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: FL-Studio-Version und System
+      description: Optional, hilft bei Schritten, die je nach Version anders aussehen.
+      placeholder: FL Studio 2025, macOS
